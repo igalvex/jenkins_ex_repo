@@ -21,8 +21,8 @@ pipeline {
                 echo 'deploying ...'
                 }
             }
-        }
     }
+    
     post{
         always{
             echo "====++++always++++===="
@@ -33,4 +33,5 @@ pipeline {
         failure{
             echo "====++++only when failed++++===="
         }
+    }    
 }
